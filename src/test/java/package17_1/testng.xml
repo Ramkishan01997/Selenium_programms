@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="package17_1.DependonMethod"/>
+      <class name="package17_1.Allanotations"/>
+      <class name="package17_1.Annotation"/>
+      <class name="package17_1.HardAssertion"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
