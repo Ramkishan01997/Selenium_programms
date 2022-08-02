@@ -30,7 +30,7 @@ public class Ct_Banking {
 		WebElement compound = driver.findElement(By.xpath("//*[@class='mat-form-field-flex ng-tns-c101-3']"));
 
 		WebElement runbtn = driver.findElement(By.xpath("//button[@id='CIT-chart-submit']"));
-		
+
 		int rows = XlUtils.getRowCount(file, "Sheet3");
 
 		for (int i = 1; i <= rows; i++) {
@@ -38,7 +38,7 @@ public class Ct_Banking {
 			String month = XlUtils.getCellData(file, "Sheet3", i, 1);
 			String intere = XlUtils.getCellData(file, "Sheet3", i, 2);
 			String comp = XlUtils.getCellData(file, "Sheet3", i, 3);
-			String expRes = XlUtils.getCellData(file, "Sheet3", i, 4);
+			String exptotal = XlUtils.getCellData(file, "Sheet3", i, 4);
 //			System.out.println(deposit + "  " + month + "  " + intere + "   " + comp + " " + expRes + " ");
 
 			inDeposit.clear();
@@ -47,7 +47,7 @@ public class Ct_Banking {
 			inDeposit.sendKeys(deposit);
 			lmonths.sendKeys(month);
 			interest.sendKeys(intere);
-			
+
 			driver.findElement(By.xpath("//mat-select[@id='mat-select-0']")).click();
 			List<WebElement> coptions = driver.findElements(By.xpath("//div[@id='mat-select-0-panel']//mat-option"));
 			System.out.println(coptions.size());
@@ -60,15 +60,17 @@ public class Ct_Banking {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].click();", runbtn);
 //		runbtn.click();
-			String actres = driver.findElement(By.xpath("//span[@id='displayTotalValue']")).getText();
-			System.out.println(actres+" "+expRes);
+			String acttotal = driver.findElement(By.xpath("//span[@id='displayTotalValue']")).getText();
+//			System.out.println(actres+" "+expRes);
 
-			if (actres.equals(expRes)) {
-//				System.out.println(actres.getText()+" "+expRes);
-				XlUtils.setCellData(file, "Sheet3", i, 6, "Pass");
-				XlUtils.fillGreenColor(file, "Sheet3", i, 6);
+			if (exptotal.equals(acttotal)) { // if expected total = actual total then
+
+				XlUtils.setCellData(file, "Sheet3", i, 6, "Passed"); // setting passed in 6th column (index start with
+																		// zero)
+				XlUtils.fillGreenColor(file, "Sheet3", i, 6); // filling the color in 6th column if passed then greeen
+																// or faile then red.
 			} else {
-				XlUtils.setCellData(file, "Sheet3", i, 6, "Fail");
+				XlUtils.setCellData(file, "Sheet3", i, 6, "Failed");
 				XlUtils.fillRedColor(file, "Sheet3", i, 6);
 			}
 		}
