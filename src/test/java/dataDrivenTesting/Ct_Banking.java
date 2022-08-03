@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -64,12 +65,13 @@ public class Ct_Banking {
 //			System.out.println(actres+" "+expRes);
 
 			if (exptotal.equals(acttotal)) { // if expected total = actual total then
-
+				
 				XlUtils.setCellData(file, "Sheet3", i, 6, "Passed"); // setting passed in 6th column (index start with
 																		// zero)
 				XlUtils.fillGreenColor(file, "Sheet3", i, 6); // filling the color in 6th column if passed then greeen
 																// or faile then red.
 			} else {
+			
 				XlUtils.setCellData(file, "Sheet3", i, 6, "Failed");
 				XlUtils.fillRedColor(file, "Sheet3", i, 6);
 			}
