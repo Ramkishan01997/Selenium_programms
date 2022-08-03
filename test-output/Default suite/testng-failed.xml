@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="package18.DataProvider1">
+      <class name="dataDrivenTesting.DDTTest">
         <methods>
-          <include name="LoginMethod" invocation-numbers="1 2 3"/>
+          <include name="check_interest" invocation-numbers="0 1 2 3 4"/>
           <include name="setup"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- package18.DataProvider1 -->
+      </class> <!-- dataDrivenTesting.DDTTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

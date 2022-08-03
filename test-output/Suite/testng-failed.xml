@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="edge"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/index.php/dashboard"/>
+  <test thread-count="5" name="ddt(failed)">
     <classes>
-      <class name="package19.ParameterTest">
+      <class name="dataDrivenTesting.DDTTest">
         <methods>
+          <include name="check_interest" invocation-numbers="0 1 2 3 4"/>
           <include name="setup"/>
-          <include name="teardown"/>
-          <include name="logoTest"/>
         </methods>
-      </class> <!-- package19.ParameterTest -->
+      </class> <!-- dataDrivenTesting.DDTTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ddt(failed) -->
 </suite> <!-- Failed suite [Suite] -->
