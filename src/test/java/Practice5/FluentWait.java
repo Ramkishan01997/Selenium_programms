@@ -23,8 +23,8 @@ public class FluentWait {
 	// Waiting 30 seconds for an element to be present on the page, checking
 	// for its presence once every 5 seconds.
 	
-	Wait<WebDriver> mywait = new FluentWait<WebDriver>(driver)
-		       .withTimeout(Duration.ofSeconds(30))
+	Wait<WebDriver> mywait = ((Object) new FluentWait(driver)
+		       .withTimeout(Duration.ofSeconds(30)))
 		       .pollingEvery(Duration.ofSeconds(5))
 		       .ignoring(NoSuchElementException.class);
 		
@@ -47,6 +47,11 @@ public class FluentWait {
 	  
 
   link_ele.click();
+	}
+
+	private Object withTimeout(Duration ofSeconds) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

@@ -9,14 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,924</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,590</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">22,514</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">ddt</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">50,752</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">package19.ParameterTest</td><td><a href="#m0">logoTest</a></td><td rowspan="1">1659492730781</td><td rowspan="1">197</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">package19.ParameterTest</td><td><a href="#m1">logoTest</a></td><td rowspan="1">1659492731972</td><td rowspan="1">131</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ddt &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">dataDrivenTesting.DDTTest</td><td><a href="#m0">check_interest</a></td><td rowspan="5">1659499195676</td><td rowspan="5">7883</td></tr><tr class="failedeven"><td><a href="#m1">check_interest</a></td></tr><tr class="failedeven"><td><a href="#m2">check_interest</a></td></tr><tr class="failedeven"><td><a href="#m3">check_interest</a></td></tr><tr class="failedeven"><td><a href="#m4">check_interest</a></td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">package19.ParameterTest#logoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test</h2><h3 id="m1">package19.ParameterTest#logoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ddt</h2><h3 id="m0">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>5000</td><td>2</td><td>48</td><td>Compounded Monthly</td><td>$0</td><td>Fail</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>3000</td><td>4</td><td>24</td><td>Compounded Annually</td><td>$3,244.80</td><td>pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>500</td><td>2</td><td>24</td><td>Compounded Monthly</td><td>$520.39</td><td>Pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1000</td><td>4</td><td>24</td><td>Compounded Monthly</td><td>$1,083.14</td><td>Pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1500</td><td>2</td><td>48</td><td>Compounded Annually</td><td>$1,623.65</td><td>Pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
