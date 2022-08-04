@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+
+<!-- <listener class-name="package20.ListenerClass"/>-->
+<listener class-name="package20.ExtentReporter"/>
+</listeners>
+  <test thread-count="5" name="mainTest">
+    <classes>
+      <class name="package20.MainTest"/>
+ <class name="package20.nopCommerceTest"/>
+    </classes>
+  </test> <!-- mainTest -->
+</suite> <!-- Suite -->
