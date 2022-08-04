@@ -9,29 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ddt</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">50,752</td><td></td><td></td></tr>
+<tr><td><a href="#t0">mainTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">18,932</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ddt &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">dataDrivenTesting.DDTTest</td><td><a href="#m0">check_interest</a></td><td rowspan="5">1659499195676</td><td rowspan="5">7883</td></tr><tr class="failedeven"><td><a href="#m1">check_interest</a></td></tr><tr class="failedeven"><td><a href="#m2">check_interest</a></td></tr><tr class="failedeven"><td><a href="#m3">check_interest</a></td></tr><tr class="failedeven"><td><a href="#m4">check_interest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">mainTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">package20.MainTest</td><td><a href="#m0">test2</a></td><td rowspan="1">1659584524759</td><td rowspan="1">24</td></tr><tr class="failedodd"><td rowspan="1">package20.nopCommerceTest</td><td><a href="#m1">logout</a></td><td rowspan="1">1659584542041</td><td rowspan="1">51</td></tr><tr><th colspan="4">mainTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">package20.MainTest</td><td><a href="#m2">test1</a></td><td rowspan="1">1659584524712</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m3">test3</a></td><td rowspan="1">1659584524795</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="2">package20.nopCommerceTest</td><td><a href="#m4">loginTest</a></td><td rowspan="1">1659584533387</td><td rowspan="1">8650</td></tr><tr class="passedodd"><td><a href="#m5">logoDisplayCheck</a></td><td rowspan="1">1659584533284</td><td rowspan="1">99</td></tr></tbody>
 </table>
-<h2>ddt</h2><h3 id="m0">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>5000</td><td>2</td><td>48</td><td>Compounded Monthly</td><td>$0</td><td>Fail</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+<h2>mainTest</h2><h3 id="m0">package20.MainTest#test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [B] but found [A]
+	at package20.MainTest.test2(MainTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>3000</td><td>4</td><td>24</td><td>Compounded Annually</td><td>$3,244.80</td><td>pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">package20.nopCommerceTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
+System info: host: &apos;LAPTOP-SAHP40V1&apos;, ip: &apos;192.168.43.72&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f59a1820d47650dfa0fbd6b30c4074dc, findElement {using=link text, value=Log out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\RAMKIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51009/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f59a1820d47650dfa0fbd6b30c4074dc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at package20.nopCommerceTest.logout(nopCommerceTest.java:58)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>500</td><td>2</td><td>24</td><td>Compounded Monthly</td><td>$520.39</td><td>Pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1000</td><td>4</td><td>24</td><td>Compounded Monthly</td><td>$1,083.14</td><td>Pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">dataDrivenTesting.DDTTest#check_interest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1500</td><td>2</td><td>48</td><td>Compounded Annually</td><td>$1,623.65</td><td>Pass</td><td>Failed</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at dataDrivenTesting.DDTTest.check_interest(DDTTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">package20.MainTest#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">package20.MainTest#test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">package20.nopCommerceTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">package20.nopCommerceTest#logoDisplayCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

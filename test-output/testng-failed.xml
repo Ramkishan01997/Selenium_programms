@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ddt(failed)">
+  <listeners>
+    <listener class-name="package20.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="mainTest(failed)">
     <classes>
-      <class name="dataDrivenTesting.DDTTest">
+      <class name="package20.MainTest">
         <methods>
-          <include name="check_interest" invocation-numbers="0 1 2 3 4"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- package20.MainTest -->
+      <class name="package20.nopCommerceTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- dataDrivenTesting.DDTTest -->
+      </class> <!-- package20.nopCommerceTest -->
     </classes>
-  </test> <!-- ddt(failed) -->
+  </test> <!-- mainTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

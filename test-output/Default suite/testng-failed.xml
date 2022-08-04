@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDrivenTesting.DDTTest">
+      <class name="package20.nopCommerceTest">
         <methods>
-          <include name="check_interest" invocation-numbers="0 1 2 3 4"/>
+          <include name="loginTest"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- dataDrivenTesting.DDTTest -->
+      </class> <!-- package20.nopCommerceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
