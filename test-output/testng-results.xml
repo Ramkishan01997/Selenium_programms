@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-04T09:12:03 IST" name="Suite" finished-at="2022-08-04T09:12:22 IST" duration-ms="18932">
+  <suite started-at="2022-08-18T12:36:23 IST" name="Suite" finished-at="2022-08-18T12:36:37 IST" duration-ms="14640">
     <groups>
     </groups>
-    <test started-at="2022-08-04T09:12:03 IST" name="mainTest" finished-at="2022-08-04T09:12:22 IST" duration-ms="18932">
+    <test started-at="2022-08-18T12:36:23 IST" name="mainTest" finished-at="2022-08-18T12:36:37 IST" duration-ms="14640">
       <class name="package20.MainTest">
-        <test-method signature="test1()[pri:1, instance:package20.MainTest@51c668e3]" started-at="2022-08-04T09:12:04 IST" name="test1" finished-at="2022-08-04T09:12:04 IST" duration-ms="20" status="PASS">
+        <test-method signature="test1()[pri:1, instance:package20.MainTest@51c668e3]" started-at="2022-08-18T12:36:23 IST" name="test1" finished-at="2022-08-18T12:36:23 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:2, instance:package20.MainTest@51c668e3]" started-at="2022-08-04T09:12:04 IST" name="test2" finished-at="2022-08-04T09:12:04 IST" duration-ms="24" status="FAIL">
+        <test-method signature="test2()[pri:2, instance:package20.MainTest@51c668e3]" started-at="2022-08-18T12:36:23 IST" name="test2" finished-at="2022-08-18T12:36:23 IST" duration-ms="14" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [B] but found [A]]]>
@@ -60,47 +59,47 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:3, instance:package20.MainTest@51c668e3]" started-at="2022-08-04T09:12:04 IST" name="test3" finished-at="2022-08-04T09:12:04 IST" depends-on-methods="package20.MainTest.test1" duration-ms="2" status="PASS">
+        <test-method signature="test3()[pri:3, instance:package20.MainTest@51c668e3]" started-at="2022-08-18T12:36:23 IST" name="test3" finished-at="2022-08-18T12:36:23 IST" depends-on-methods="package20.MainTest.test1" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
       </class> <!-- package20.MainTest -->
       <class name="package20.nopCommerceTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-04T09:12:04 IST" name="setup" finished-at="2022-08-04T09:12:13 IST" duration-ms="8475" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-18T12:36:23 IST" name="setup" finished-at="2022-08-18T12:36:29 IST" duration-ms="5458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logoDisplayCheck()[pri:1, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-04T09:12:13 IST" name="logoDisplayCheck" finished-at="2022-08-04T09:12:13 IST" duration-ms="99" status="PASS">
+        <test-method signature="logoDisplayCheck()[pri:1, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-18T12:36:29 IST" name="logoDisplayCheck" finished-at="2022-08-18T12:36:29 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoDisplayCheck -->
-        <test-method signature="loginTest()[pri:2, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-04T09:12:13 IST" name="loginTest" finished-at="2022-08-04T09:12:22 IST" duration-ms="8650" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-18T12:36:29 IST" name="loginTest" finished-at="2022-08-18T12:36:37 IST" duration-ms="7912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="logout()[pri:3, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-04T09:12:22 IST" name="logout" finished-at="2022-08-04T09:12:22 IST" depends-on-methods="package20.nopCommerceTest.loginTest" duration-ms="51" status="FAIL">
+        <test-method signature="logout()[pri:3, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-18T12:36:37 IST" name="logout" finished-at="2022-08-18T12:36:37 IST" depends-on-methods="package20.nopCommerceTest.loginTest" duration-ms="38" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Log out"}
-  (Session info: chrome=103.0.5060.134)
+  (Session info: chrome=104.0.5112.81)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
 System info: host: 'LAPTOP-SAHP40V1', ip: '192.168.43.72', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f59a1820d47650dfa0fbd6b30c4074dc, findElement {using=link text, value=Log out}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\RAMKIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51009/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f59a1820d47650dfa0fbd6b30c4074dc]]>
+Command: [8f59eb6073953ca98412ebb0244ff24f, findElement {using=link text, value=Log out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\RAMKIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65000/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f59eb6073953ca98412ebb0244ff24f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Log out"}
-  (Session info: chrome=103.0.5060.134)
+  (Session info: chrome=104.0.5112.81)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
 System info: host: 'LAPTOP-SAHP40V1', ip: '192.168.43.72', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f59a1820d47650dfa0fbd6b30c4074dc, findElement {using=link text, value=Log out}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\RAMKIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51009}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51009/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f59a1820d47650dfa0fbd6b30c4074dc
+Command: [8f59eb6073953ca98412ebb0244ff24f, findElement {using=link text, value=Log out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\RAMKIS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65000/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f59eb6073953ca98412ebb0244ff24f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,12 +151,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-04T09:12:22 IST" name="tearDown" finished-at="2022-08-04T09:12:22 IST" duration-ms="784" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:package20.nopCommerceTest@5b1669c0]" started-at="2022-08-18T12:36:37 IST" name="tearDown" finished-at="2022-08-18T12:36:37 IST" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- package20.nopCommerceTest -->
     </test> <!-- mainTest -->
   </suite> <!-- Suite -->
-
 </testng-results>

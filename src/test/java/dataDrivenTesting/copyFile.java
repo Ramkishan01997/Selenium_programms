@@ -18,7 +18,7 @@ public class copyFile {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		// testing
 		driver.get("https://www.cit.com/cit-bank/resources/calculators/certificate-of-deposit-calculator/");
 		driver.manage().window().maximize();
 				
